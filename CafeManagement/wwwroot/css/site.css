@@ -1,0 +1,123 @@
+/* wwwroot/css/site.css */
+:root {
+  /* Light theme variables */
+  --background-color: #ffffff;
+  --text-color: #2c3e50;
+  --card-bg: #ffffff;
+  --border-color: #e5e5e5;
+  --navbar-bg: #f8f9fa;
+  --card-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+  --hover-color: #3498db;
+}
+
+[data-theme="dark"] {
+  /* Dark theme variables */
+  --background-color: #1a1a1a;
+  --text-color: #ffffff;
+  --card-bg: #2d2d2d;
+  --border-color: #404040;
+  --navbar-bg: #2d2d2d;
+  --card-shadow: 0 .25rem .75rem rgba(255, 255, 255, .05);
+  --hover-color: #5dade2;
+}
+
+/* Apply theme variables */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin-bottom: 60px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar {
+  background-color: var(--navbar-bg) !important;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-brand, .nav-link {
+  color: var(--text-color) !important;
+}
+
+.nav-link:hover {
+  color: var(--hover-color) !important;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--card-shadow);
+  margin-bottom: 20px;
+  transition: transform 0.2s, background-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  color: var(--text-color);
+}
+
+.footer {
+  background-color: var(--navbar-bg);
+  border-top: 1px solid var(--border-color);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+  color: var(--text-color);
+}
+
+/* Base styles */
+html {
+  font-size: 14px;
+  position: relative;
+  min-height: 100%;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid var(--border-color);
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.box-shadow {
+  box-shadow: var(--card-shadow);
+}
+
+/* Theme toggle button styles */
+.theme-toggle {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.theme-toggle:hover {
+  color: var(--hover-color);
+}
+
+/* Dropdown customization */
+.dropdown-menu {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+.dropdown-item {
+  color: var(--text-color);
+}
+
+.dropdown-item:hover {
+  background-color: var(--navbar-bg);
+  color: var(--hover-color);
+}

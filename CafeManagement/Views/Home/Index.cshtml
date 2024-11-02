@@ -1,0 +1,40 @@
+﻿<!-- Views/Home/Index.cshtml -->
+@{
+    ViewData["Title"] = "Trang Chủ";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Quản Lý Quán Cafe</h1>
+
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-chair"></i> Quản Lý Bàn</h5>
+                    <p class="card-text">Quản lý thông tin bàn và trạng thái</p>
+                    <a asp-controller="Ban" asp-action="Index" class="btn btn-primary">Xem Chi Tiết</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-coffee"></i> Đồ Uống</h5>
+                    <p class="card-text">Quản lý danh sách đồ uống</p>
+                    <a asp-controller="DoUong" asp-action="Index" class="btn btn-primary">Xem Chi Tiết</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-receipt"></i> Đơn Hàng</h5>
+                    <p class="card-text">Quản lý đơn hàng và thanh toán</p>
+                    <a asp-controller="DonHang" asp-action="Index" class="btn btn-primary">Xem Chi Tiết</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
