@@ -20,7 +20,7 @@ public class Store
     public string Phone { get; set; }
 
     // Navigation properties
-    public virtual ICollection<Employee> Employees { get; set; }
-    public virtual ICollection<Product> Products { get; set; }
-    public virtual ICollection<Order> Orders { get; set; }
+    public virtual ICollection<Employee> Employees { get; set; } = new List<Employee>();
+    public virtual ICollection<Product> Products { get; set; } = new List<Product>();
+    public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
 }

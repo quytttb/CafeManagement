@@ -20,5 +20,5 @@ public class Order
     // Navigation properties
     public virtual Store Store { get; set; }
     public virtual Employee Employee { get; set; }
-    public virtual ICollection<OrderDetail> OrderDetails { get; set; }
+    public virtual ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
 }

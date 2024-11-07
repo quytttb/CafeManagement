@@ -17,5 +17,5 @@ public class Role
     public bool IsAdmin { get; set; }
 
     // Navigation property
-    public virtual ICollection<Employee> Employees { get; set; }
+    public virtual ICollection<Employee> Employees { get; set; } = new List<Employee>();
 }
