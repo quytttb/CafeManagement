@@ -1,4 +1,4 @@
-namespace CafeManagement.Models;
+namespace CafeManagement.Models.ViewModel;
 
 public class ErrorViewModel
 {

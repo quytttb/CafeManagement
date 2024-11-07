@@ -1,0 +1,35 @@
+﻿@model CafeManagement.Models.Store
+
+<h2>Xóa cửa hàng</h2>
+
+<h4>Bạn xóa cửa hàng này à?</h4>
+<div>
+    <h4>Cửa hàng</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Tên
+        </dt>
+        <dd class="col-sm-10">
+            @Model.StoreName
+        </dd>
+        <dt class="col-sm-2">
+            Địa chỉ
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Address
+        </dd>
+        <dt class="col-sm-2">
+            Số điện thoại
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Phone
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="StoreId" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Quay về danh sách</a>
+    </form>
+</div>
